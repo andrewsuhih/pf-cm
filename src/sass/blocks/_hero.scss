@@ -1,0 +1,49 @@
+.hero {
+    position: relative;
+
+    &__city {
+        color: $secondary-color;
+    }
+
+    &__photo {
+        max-width: 450px;
+        padding-top: 15px;
+        margin: 0 auto;
+        transform: translateX(-25%);
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin: 0 auto;
+        max-width: 675px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    &__btn {
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+
+        svg {
+            width: 75px;
+            height: 75px;
+
+            path {
+                stroke-width: 0.6;
+            }
+        }
+    }
+}

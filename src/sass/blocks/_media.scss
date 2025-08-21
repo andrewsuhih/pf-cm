@@ -1,0 +1,161 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+        }
+    }
+
+    .skills {
+        &__wrapper {
+            grid-template: repeat(4, 100px) / repeat(2, 100px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+
+    .projects {
+        &__details {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        &__link {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .header {
+        &__nav {
+            &-menu {
+                display: flex;
+                margin-left: auto; 
+                position: relative;
+		        z-index: 3;
+            }
+
+            .header__nav-list {
+                position: fixed;
+		        top: 80px;
+		        left: 0;
+		        width: 100%;
+		        height: calc(100vh - 82px);
+		        background-color: $bg-color;
+		        display: flex;
+		        flex-direction: column;
+		        align-items: center;
+		        justify-content: flex-start;
+		        padding-top: 30px;
+		        gap: 30px;
+		        transform: translateY(-100%);
+		        transition: transform 0.3s ease-in-out;
+		        z-index: 2;
+            }
+        
+            .header__nav-list.active {
+                transform: translateY(0);
+            }
+        }
+	}
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .hero {
+        
+        &__photo {
+            max-width: 250px;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 66px;
+        }
+
+        &__subtitle {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        &__column {
+            padding-left: 30px;
+    
+            &:after {
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    
+    .about {
+        &__title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+        &__item {
+
+            &-title {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 44px;
+            }
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__arrow {
+            padding-top: 50px;
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+
+        &__telegram-link {
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+    }
+}

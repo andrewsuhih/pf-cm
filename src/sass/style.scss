@@ -1,0 +1,38 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import 'base/variables';
+@import 'base/title';
+
+* {
+    font-family: "Manrope", sans-serif;
+    color: $main-color;
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    color: $secondary-color;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import 'blocks/animation';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'blocks/projects';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/media';

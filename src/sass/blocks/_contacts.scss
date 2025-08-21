@@ -1,0 +1,37 @@
+.contacts {
+    position: relative;
+    padding-top: 300px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__title {
+        max-width: 360px;
+    }
+
+    &__arrow {
+        margin: 0 auto;
+
+        svg {
+            width: 200px;
+            height: 100px;
+
+            path {
+                stroke-width: 0.6;
+            }
+        }
+    }
+
+    &__telegram-link {
+        svg {
+            width: 145px;
+            height: 145px;
+            transform: translateY(-25%);
+
+            path {
+                stroke-width: 0.6;
+            }
+        }
+    }
+}

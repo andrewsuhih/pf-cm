@@ -1,0 +1,43 @@
+.projects {
+    position: relative;
+    padding-top: 100px;
+
+    &__item {
+        padding-top: 60px;
+
+        &-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        &-content.open {
+            max-height: 1000px;
+        }
+
+        &-header {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &-year {
+            margin-left: auto;
+            padding: 0 15px;
+        }
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 20px;
+        align-items: start;
+        padding-top: 25px;
+    }
+
+    &__image img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,22 @@
+.footer {
+    padding: 300px 0 30px;
+    color: $secondary-color;
+    font-size: 12px;
+
+    &__wrapper {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+
+    &__copyright {
+        justify-self: start;
+    }
+
+    &__love {
+        justify-self: center;
+        text-align: center;
+
+    }
+}

@@ -1,0 +1,44 @@
+.skills {
+    position: relative;
+    padding-top: 100px;
+
+    hr {
+        background-color: $secondary-color;
+    }
+
+    &__wrapper {
+        padding-top: 85px;
+        display: grid;
+        justify-content: center;
+        grid-template: repeat(2, 100px) / repeat(4, 100px);
+        grid-auto-rows: 100px;
+        gap: 75px 120px;
+    }
+
+    &__additional {
+        margin: 50px auto 0;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    &__item {
+        svg {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__item:hover {
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+    }
+}

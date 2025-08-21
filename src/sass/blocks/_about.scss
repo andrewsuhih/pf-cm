@@ -1,0 +1,32 @@
+.about {
+    position: relative;
+    padding-top: 100px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        list-style-type: none;
+        gap: 75px;
+        margin: 0;
+    }
+
+    &__item-title {
+        color: $secondary-color;
+    }
+
+    &__column {
+        position: relative;
+        padding-left: 75px;
+
+        &:after {
+            content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            background-color: $secondary-color;
+        }
+
+    }
+}

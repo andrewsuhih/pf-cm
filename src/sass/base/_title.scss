@@ -1,0 +1,37 @@
+.title {
+    &_fs20 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &_fs32 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    &_fs36 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        
+        &-light {
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 49px;
+        }
+
+        &-medium {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 49px;
+        }
+    }
+
+    &_fs64 {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 87px;
+    }
+}
