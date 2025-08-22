@@ -34,4 +34,4 @@ npx gulp
 
 ---
 
-© 2025, Andrew Suhih
+© 2025, andrewsuhih
