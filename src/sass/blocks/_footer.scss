@@ -17,6 +17,19 @@
     &__love {
         justify-self: center;
         text-align: center;
+    }
 
+    &__github-link {
+        justify-self: end;
+
+        svg {
+            display: block;
+            width: 24px;
+            height: 24px;
+
+            path {
+                fill: $main-color;
+            }
+        }
     }
 }
